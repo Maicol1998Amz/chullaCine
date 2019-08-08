@@ -1,0 +1,80 @@
+<div class="mercadotarjeta-container">
+    <div id="mercadotarjeta-checkout">
+        <h1>Datos de Pago</h1>
+        <form class="mercadotarjeta-form" action="submit">
+            <div class="mercadotarjeta-form-izquierda form-group">
+                <label class="">Selecciona Tarjeta</label>
+                <select name="Mes" class="custom-select mb-3">
+                    <option selected>Seleccina El tipo de Tarjeta</option>
+                    <option value="Tarjeta de Credito">Tarjeta de Credito</option>
+                    <option value="Tarjeta de debito">Tarjeta de Debito</option>  
+                </select>
+            </div>
+            <div class="mercadotarjeta-form-derecha form-group">
+                <label class="">Ingresa los ultimos digitos de tu Tarjeta</label>
+                <div class="mercadotarjeta-input-container">
+                    <input class="form-control" type="number" placeholder="Ej: 123">
+                </div>
+                <div class="mercadotarjeta-preview-container two-card hide">
+                    <div class="mercadotarjeta-amex-preview"></div>
+                    <div class="mercadotarjeta-visa-preview"></div>
+                </div>
+            </div>
+            <div class="mercadotarjeta-form-izquierda form-group">
+                <label class="">Seleccione el Banco</label>
+                <select name="Mes" class="custom-select mb-3">
+                    <option selected>Selecciona el Banco</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="American Express">American Express</option>
+                    <option value="Diners Club">Diners Club</option>
+                    <option value="Banco Pichincha de Ecuador">Banco Pichincha de Ecuador</option>
+                    <option value="Banco de Guayaquil de Ecuador">Banco de Guayaquil de Ecuador</option>
+                    <option value="Produbanco de Ecuador">Produbanco de Ecuador</option>
+                    <option value="Banco Bolivariano de Ecuador">Banco Bolivariano de Ecuador</option>
+                    <option value="Banco Internacional de Ecuador">Banco Internacional de Ecuador</option>
+                    <option value="Banco del Austro">Banco del Austro</option>
+                    <option value="Banco Promérica">Banco Promérica</option>
+                    <option value="Banco Solidario de Ecuador">Banco Solidario de Ecuador</option>
+                    <option value="Banco del Pacífico de Ecuador">Banco del Pacífico de Ecuador</option>
+                    <option value="Banco ProCredit de Ecuador">Banco ProCredit de Ecuador</option>
+                </select>
+            </div>
+            <div class="container mt-3">
+                <label class="">Fecha de Caducidad</label>
+                <select name="Mes" class="custom-select mb-3">
+                    <option selected>Ingresa el Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Junio">Junio</option>
+                    <option value="Julio">Julio</option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Septiembre">septiembre</option>
+                    <option value="Octubre">Octubre</option>
+                    <option value="Noviembre">Noviembre</option>
+                    <option value="Diciembre">Diciembre</option>
+                  </select>
+            </div>
+            <div class="container mt-3">
+                <select name="cars" class="custom-select mb-3">
+                    <option selected>Ingresa el año</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>  
+                  </select>
+            </div>
+            <button id="mercadotarjeta-button" class="btn btn-block btn-success submit-button" type="submit" [routerLink]="['/factura']">
+          <span class="submit-button-lock"></span>
+          <span class="align-middle">Confirmar Pago</span>
+        </button>
+        </form>
+    </div>
+</div>

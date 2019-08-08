@@ -1,0 +1,81 @@
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p>
+                <a class="btn btn-sq-lg btn-primary">
+                    <i class="fa fa-user fa-5x"></i><br /> Datos del Usuario <br>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <br>
+        <div class="row">
+            <br>
+            <br>
+            <h2 class="text-danger">Verifica si tus datos son correctos</h2>
+            <table class="table table-bordered success">
+                <thead>
+                    <tr>
+                        <th class="info bg-primary">Nombres y Apellidos Completos</th>
+                        <td class="bg-info">Juan Carlos Amores Ruiz</td>
+                    </tr>
+                    <tr>
+                        <th class="info">Email:</th>
+                        <td>thedoors@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th class="info">Contacto:</th>
+                        <td>0985557676</td>
+                    </tr>
+
+                    <tr>
+                        <th class="info">Ciudad y direccion:</th>
+                        <td>Quito Av. la Gasca</td>
+                    </tr>
+
+
+                    <tr>
+                        <th valign="top" class="info">Sala:</th>
+                        <td>Sala Numero 2</td>
+                    </tr>
+
+                    <tr>
+                        <th class="info">Pelicula:</th>
+                        <td>Troya</td>
+                    </tr>
+
+                    <tr>
+                        <th class="info">Transaccion:</th>
+                        <td><b>44653335</b></td>
+                    </tr>
+
+
+                    <tr>
+                        <th class="info bg-primary">Fecha y Hora de Compra</th>
+                        <td class="bg-info">10/12/2019 12:00:45</td>
+                    </tr>
+                    <tr>
+                        <form>
+                            <th class="info">Action To Approval</th>
+                            <td><select id="approv_status" name="approv_status" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="active"><b>Active</b></option>
+                                    <option value="inactive"><b>Inactive</b></option>
+                                </select></td>
+                    <tr>
+                        <th colspan="1"></th>
+                        <td>
+                            <input type="hidden" name="hidden_id" id="hidden_id" value="<?php echo $value->id; ?>">
+                            <input type="hidden" name="folder_name" id="folder_name"
+                                value="<?php echo $value->email; ?>">
+                            <input type="button" id="approve_btn" class="btn btn-info" name="approve_btn"
+                                value="Approve"></td>
+                        </form>
+                    </tr>
+                </thead>
+            </table>
+            <button class="btn btn-primary" [routerLink]="['/metodo-pago']">Siguiente</button>
+        </div>
+    </div>
